@@ -1,0 +1,22 @@
+
+/* 设置通用样式 */
+page,view,text,swiper,button,navigator,image{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+page {
+  /* 设定主题颜色 */
+  --themeColor: #e5293c;
+  --greyColor: #707070;
+  /* 定义统一字体大小 假设设计稿的大小是 375px
+      1px = 2rpx
+      14px = 28rpx
+   */
+   font-size: 28rpx;
+}
+
+image{
+  width: 100%;
+}

@@ -1,0 +1,88 @@
+.index-swiper {
+  swiper {
+    /* 1 width 750 height:340 */
+    width: 750rpx;
+    height: 340rpx;
+    image {
+      width: 100%;
+    }
+  }
+}
+
+.index-cate {
+  display: flex;
+  navigator {
+    flex: 1;
+    padding: 20rpx;
+    image {
+      width: 100%;
+    }
+  }
+}
+
+// .index-floor{
+//   .floor-group
+//     .floor-title{
+//       padding: 10rpx 0;
+//       image{
+//         width: 100%;
+//       }
+//     }
+//     .floor-list{
+//       // 清除浮动
+//       overflow: hidden;
+//       navigator{
+//         float: left;
+//         width: 33.33%;
+
+//       /* 后四个超链接 */
+//       &:nth-last-child(-n+4){
+//       /* 原图的宽高 232 *386 */
+//       // 232 / 386 = 33.33vw / height
+//       // 第一张图片的高度 height:33.33vw * 386 /  232
+//       height:33.33vw * 386 /  232 / 2 ;
+
+//       border-left: 10rpx solid #fff;
+//       }
+
+//       /* 2 3 两个超链接 */
+//       &:nth-child(2),
+//       &:nth-child(3){
+//         border-bottom: 10rpx solid #fff;
+//       }
+//         image{
+//           width: 100%;
+//           height: 100%;
+//         }
+//       }
+//     }
+//   }
+
+.index-floor {
+  .floor-group {
+    .floor-title {
+      padding: 10rpx 0;
+      image {
+        width: 100%;
+      }
+    }
+    .floor-list {
+      margin: 5rpx 10rpx;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-flow: row dense;
+      grid-gap: 10rpx;
+      navigator {
+        &:first-child {
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
